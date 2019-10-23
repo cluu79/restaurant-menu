@@ -1,0 +1,141 @@
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* 1rem = 10pixels */
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+
+}
+
+a{
+  color:#444;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.navbar{
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.navbar .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.navbar .logo{
+  font-size: 2.5rem;
+}
+
+.navbar .nav{
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav a{
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+.navbar .nav a:hover{
+  color: #555;
+}
+
+.section-a{
+  margin: 2rem 0;
+}
+.section-a .container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-a h1{
+  font-size: 4rem;
+
+}
+.section-a p{
+  margin:1rem 0;
+}
+
+.section-b{
+  position: relative;
+  background: url('../img/pasta.jpg') no-repeat bottom center/cover;
+  height: 600px;
+  
+}
+.section-b-inner{
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 850px;
+  padding: 5rem 0;
+}
+
+.section-b-inner h3{
+  font-size: 2rem;
+}
+.section-b-inner h2{
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.section-b-inner p{
+  font-size: 1.5rem;
+  margin-top: 1rem ;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.5) ;
+}
+
+.btn{
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1.5rem;
+
+}
+.btn:hover{
+  background-color: rgb(238, 225, 225);
+  color: black;
+}
